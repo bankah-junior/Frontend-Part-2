@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTB | About</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+    <div class="jumbotron">
+        <!-- navbar section -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="../logo/ctblogo2.gif" alt="" class="img-fluid my-2" style="filter: invert(100%);">
+            <a href="home.html">Home</a>
+            <a href="home.html#sneaker">Sneakers</a>
+            <a href="home.html#cars">Cars</a>
+            <a href="home.html#wallpapers">Wallpapers</a>
+            <a href="home.html#tech">Technologies</a>
+            <a href="howtobuy.html">How to Purchase</a>
+            <a href="#" class="active">About</a>
+            <a href="../html/index.html">Logout</a>
+        </div>
+      
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+        <!-- end of navbar section -->
+
+        <div class="top-banner">
+            <img src="../logo/top-banner.gif" alt="" class="img-fluid">
+        </div>
+
+        <!-- About section -->
+        <center class="py-3"><h1 style="font-family: 'Courier New', Courier, monospace;">About</h1></center>
+        <div class="container about-section">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div style="height: 100%; display: flex; align-items: center;">
+                        <img src="../img/about.jpeg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="about-words w3-card">
+                        <p class="w3-center" style="font-weight: 500;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa voluptates 
+                            totam? Molestiae, quibusdam! Quidem ab fugit quod qui nulla dicta reiciendis beatae 
+                            commodi omnis consectetur consequatur, sit hic repellat.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde earum aperiam placeat, 
+                            iusto error debitis incidunt saepe, assumenda reiciendis quaerat nostrum asperiores nihil 
+                            possimus molestias. Corrupti pariatur exercitationem neque soluta nisi tenetur cum totam 
+                            perspiciatis? Quam illum, quae facere necessitatibus porro officiis ratione veniam dolores 
+                            ex quis non, vel velit aliquid quas iusto. Inventore incidunt aperiam minima porro praesentium 
+                            accusantium quod cumque esse. Rem illo hic perspiciatis laboriosam quaerat suscipit facilis 
+                            quis culpa fuga rerum modi similique quidem voluptatum tempore, autem, expedita ex aperiam 
+                            recusandae porro. Cum, dolorum distinctio laborum quam commodi dolore modi fugiat ea similique 
+                            quis expedita consequatur vero, quidem fuga! Error culpa, laboriosam est, dolores nam eos id 
+                            mollitia dicta quos illum, illo deserunt quam cupiditate architecto reiciendis nobis minus? 
+                            Minima natus vel id eos. Nemo aliquam dolor impedit assumenda magnam placeat quos maiores 
+                            quibusdam reiciendis eius delectus, commodi deserunt veniam repellat eos officiis eaque quia 
+                            quasi consectetur! Assumenda asperiores consequuntur deserunt possimus, fugiat sed consequatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of about section -->
+
+        <!-- Contact section -->
+        <div class="container contact-section purchasing-form">
+            <div style="padding: 32px;">
+                <h1 id="contact">CONTACT US</h1>
+            </div>
+
+            <div class="container">
+                <form action="" class="py-3">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+              
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email.." required>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px" required></textarea>
+              
+                  <div class="d-grid gap-2">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                  </div>
+                </form>
+              </div>
+        </div>
+        <!-- End of contact section -->
+
+        <!-- FAQs section -->
+        <div class="container faqs-section">
+            <div style="padding: 32px;">
+                <center> <h1 id="faqs" style="letter-spacing: 8px;">FAQ</h1> </center>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li> <a href="howtobuy.html#howtobuy"> How can I buy a product? </a> </li>
+                    <li> <a href="howtobuy.html#buyunavailable"> Is it possible to buy a product that isn't on your page? </a> </li>
+                    <li> <a href="howtobuy.html#payment"> How is payment done? </a> </li>
+                    <li> <a href="#"> How long have you been operating? </a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End of FAQs section -->
+
+        <!-- Newsletter section -->
+        <section class="newsletter section">
+
+            <div class="container">
+
+                <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+                <div class="form-container-inner">
+                    <h6 class="title newsletter-title">Subscribe to InfoHub</h6>
+                    <p class="newsletter-description">Lorem ipsum dolor sit amet consectetur adipisicing quaerat dignissimos.</p>
+
+                    <form action="" class="form mb-5">
+                        <input class="form-input" type="email" placeholder="Enter your email address">
+                        <button class="btn form-btn" type="submit">
+                            <i class="ri-mail-send-line">
+                                <img src="../img/envelope.png" alt="mail icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                            </i>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End of newsletter section -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-section container pt-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h2> <b>C</b>onnect <b>T</b>o <b>B</b>uyers </h2>
+                    <p>Connect To buyers is everywhere, we work with top companies. Our main branch can be located in <b><q>Ghana</q></b></p>
+                    <p><a href="mailto:connect2buyers@gmail.com">connect2buyers@gmail.com</a></p>
+                    <p><a href="tel:+233262991910">+233262991910</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3>USEFUL LINKS</h3>
+                    <p><a href="home.html">Home</a></p>
+                    <p><a href="home.html#sneakers">Sneakers</a></p>
+                    <p><a href="home.html#cars">Cars</a></p>
+                    <p><a href="home.html#wallpapers">Wallpapers</a></p>
+                    <p><a href="home.html#tech">Technologies</a></p>
+                    <p><a href="about.html">About</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3>HELP & INFORMATION</h3>
+                    <p><a href="howtobuy.html">Help</a></p>
+                    <p><a href="howtobuy.html#howtobuy">How To Purchase</a></p>
+                    <p><a href="howtobuy.html#buyunavailable">Buy</a></p>
+                    <p><a href="about.html#contact">Contact</a></p>
+                    <p><a href="about.html#faqs">FAQs</a></p>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="copyright-section w3-center py-3">
+                <p>Copyright &copy; 2022 Bankies Designs. All Rights Reserved</p>
+                <p>Bankah Anthony Bekeo</p>
+                <div class="socialmedia-icons">
+                    <div class="facebook-icon px-3">
+                        <a href="#"><img src="../icons/facebook-filled.png" alt="facebook" class="img-fluid" width="16px"></a>
+                    </div>
+                    <div class="instagram-icon px-3">
+                        <a href="#"><img src="../icons/instagram-filled.png" alt="instagram" class="img-fluid" width="16px"></a>
+                    </div>
+                    <div class="tiktok-icon px-3">
+                        <a href="#"><img src="../icons/tiktok.png" alt="tik tok" class="img-fluid" width="16px"></a>
+                    </div>
+                    <div class="youtube-icon px-3">
+                        <a href="#"><img src="../icons/youtube.png" alt="youtube" class="img-fluid" width="16px"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- End of footer -->
+
+    </div>
+
+    <script src="../JavaScript/bootstrap.js"></script>
+    <script src="../JavaScript/index.js"></script>
+</body>
+</html>

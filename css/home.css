@@ -1,0 +1,467 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a.active {
+  color: #dddada;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  position: absolute;
+}
+#main span {
+  color: #000;
+  padding: 10px 0 0 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.jumbotron .sneakers-section {
+  /* Position the image container (needed to position the left and right arrows) */
+  /* Hide the images by default */
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* Number text (1/3 etc) */
+  /* Container for image text */
+  /* Six columns side by side */
+  /* Add a transparency effect for thumnbail images */
+}
+.jumbotron .sneakers-section img {
+  vertical-align: middle;
+}
+.jumbotron .sneakers-section .container {
+  position: relative;
+}
+.jumbotron .sneakers-section .mySlides {
+  display: none;
+}
+.jumbotron .sneakers-section .cursor {
+  cursor: pointer;
+}
+.jumbotron .sneakers-section .prev,
+.jumbotron .sneakers-section .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.jumbotron .sneakers-section .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.jumbotron .sneakers-section .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.jumbotron .sneakers-section .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.jumbotron .sneakers-section .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.jumbotron .sneakers-section .column {
+  float: left;
+  width: 16.66%;
+}
+.jumbotron .sneakers-section .demo {
+  opacity: 0.6;
+}
+.jumbotron .sneakers-section .active,
+.jumbotron .sneakers-section .demo:hover {
+  opacity: 1;
+}
+.jumbotron .cars-section .column,
+.jumbotron .tech-section .column,
+.jumbotron .unavailable-purchasing .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .jumbotron .cars-section .column,
+  .jumbotron .tech-section .column,
+  .jumbotron .unavailable-purchasing .column {
+    width: 100%;
+    display: block;
+  }
+}
+.jumbotron .cars-section .card,
+.jumbotron .tech-section .card,
+.jumbotron .unavailable-purchasing .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.jumbotron .cars-section .container,
+.jumbotron .tech-section .container,
+.jumbotron .unavailable-purchasing .container {
+  padding: 0 16px;
+}
+.jumbotron .cars-section .container::after, .jumbotron .cars-section .row::after,
+.jumbotron .tech-section .container::after,
+.jumbotron .tech-section .row::after,
+.jumbotron .unavailable-purchasing .container::after,
+.jumbotron .unavailable-purchasing .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.jumbotron .cars-section .title,
+.jumbotron .tech-section .title,
+.jumbotron .unavailable-purchasing .title {
+  color: grey;
+}
+.jumbotron .cars-section a,
+.jumbotron .tech-section a,
+.jumbotron .unavailable-purchasing a {
+  text-decoration: none;
+  color: #fff;
+}
+.jumbotron .cars-section .button,
+.jumbotron .tech-section .button,
+.jumbotron .unavailable-purchasing .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.jumbotron .cars-section .button:hover,
+.jumbotron .tech-section .button:hover,
+.jumbotron .unavailable-purchasing .button:hover {
+  background-color: #555;
+}
+.jumbotron .wallpaper-section {
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+.jumbotron .wallpaper-section .header {
+  text-align: center;
+  padding: 32px;
+}
+.jumbotron .wallpaper-section .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.jumbotron .wallpaper-section .column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.jumbotron .wallpaper-section .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 800px) {
+  .jumbotron .wallpaper-section .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .jumbotron .wallpaper-section .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.jumbotron footer {
+  background-color: #23253A;
+  color: #fff;
+}
+.jumbotron footer a {
+  text-decoration: none;
+}
+.jumbotron footer .footer-section .horizontal-line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+.jumbotron footer .footer-section .copyright-section .socialmedia-icons {
+  display: flex;
+  justify-content: center;
+}
+.jumbotron footer .footer-section .copyright-section .socialmedia-icons img {
+  filter: invert(50%);
+}
+.jumbotron footer .footer-section .copyright-section .socialmedia-icons img:hover {
+  filter: invert(100%);
+}
+
+.jumbotron .purchasing-section .purchasing-steps .steps #step1 .title::before, .jumbotron .purchasing-section .purchasing-steps .steps #step2 .title::before, .jumbotron .purchasing-section .purchasing-steps .steps #step3 .title::before, .jumbotron .purchasing-section .purchasing-steps .steps #step4 .title::before {
+  content: attr(data-steps);
+  font-size: 3rem;
+  text-transform: uppercase;
+  opacity: 0.2;
+}
+.jumbotron .purchasing-form input[type=text], .jumbotron .purchasing-form input[type=tel], .jumbotron .purchasing-form input[type=number], .jumbotron .purchasing-form input[type=file], .jumbotron .purchasing-form input[type=email], .jumbotron .purchasing-form select, .jumbotron .purchasing-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.jumbotron .purchasing-form .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+.jumbotron .verification-field {
+  /* Style the header */
+  /* Clear floats after the header */
+  /* Style the input */
+  /* Style the "Add" button */
+}
+.jumbotron .verification-field .header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.jumbotron .verification-field .header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.jumbotron .verification-field input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.jumbotron .verification-field .addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.jumbotron .verification-field .addBtn:hover {
+  background-color: #bbb;
+}
+.jumbotron .payment-section {
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+}
+.jumbotron .payment-section .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.jumbotron .payment-section .col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+.jumbotron .payment-section .col-50 {
+  padding: 0 16px;
+}
+.jumbotron .payment-section .container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.jumbotron .payment-section input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.jumbotron .payment-section label {
+  margin-bottom: 10px;
+  display: block;
+}
+.jumbotron .payment-section .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+.jumbotron .payment-section .btn {
+  background-color: #0B5ED7;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.jumbotron .payment-section .btn:hover {
+  background-color: #0053d1;
+}
+.jumbotron .payment-section a {
+  color: #2196F3;
+}
+.jumbotron .payment-section hr {
+  border: 1px solid lightgrey;
+}
+.jumbotron .payment-section span.price {
+  float: right;
+  color: grey;
+}
+@media (max-width: 800px) {
+  .jumbotron .payment-section .row {
+    flex-direction: column-reverse;
+  }
+  .jumbotron .payment-section .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.jumbotron .faqs-section ul {
+  list-style-type: square;
+}
+.jumbotron .faqs-section ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.jumbotron .faqs-section ul li a {
+  text-decoration: none;
+}
+.jumbotron .newsletter .section-title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+.jumbotron .newsletter .section-title::after {
+  content: attr(data-name);
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.1;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+.jumbotron .newsletter .form-container-inner {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.jumbotron .newsletter .form {
+  display: flex;
+  justify-content: center;
+}
+.jumbotron .newsletter .form-input,
+.jumbotron .newsletter .form-btn {
+  display: inline-block;
+  outline: none;
+  border: 2px solid #252830;
+  padding: 1.5rem;
+  color: #fff;
+}
+.jumbotron .newsletter .form-input {
+  border-right: none;
+  background-color: #131417;
+}
+.jumbotron .newsletter .form-input::placeholder {
+  color: #fff;
+}
+.jumbotron .newsletter .form-btn {
+  margin-left: -0.5rem;
+  border-left: none;
+  background-color: #252830;
+  text-transform: uppercase;
+  width: 5rem;
+}
+.jumbotron .newsletter .newsletter {
+  padding-bottom: 6rem;
+}
+.jumbotron .newsletter .newsletter-title {
+  font-size: 2rem;
+}
+.jumbotron .newsletter .newsletter-description {
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=home.css.map */
