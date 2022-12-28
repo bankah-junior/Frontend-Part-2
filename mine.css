@@ -1,0 +1,141 @@
+#chatbox {
+    background-image: url('./img/profiles/Chat-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+center {
+    color: #fff;
+    width: 200%;
+    background-image: url('./img/bg-img.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.chatsection, .info {
+    background-color: #111b21;
+    color: #fff;
+}
+
+.header, .header2, .m, .message-section, .mid{
+    background-color: #202c33;
+    color: #fff;
+}
+
+#closeMenuIconDisplay {
+    background-color: #192227;
+}
+
+.header img, .backarrow, .header2 .i, .message-section img, .mic, .info .i {
+    filter: invert(100%);
+}
+
+.infoDown {
+    background-color: #0b141a;
+}
+
+.m {
+    border-color: #202c33;
+}
+
+.n {
+    background-color: #005c4b;
+    border-color: #005c4b;
+}
+
+.bbc {
+    border-color: #005c4b;
+    color: #005c4b;
+}
+
+.paperclip {
+    background-color: #26353d;
+    bottom: 5rem; 
+    width: 90%; 
+    height: 35%;
+}
+
+.paperclip img {
+    filter: invert(100%);
+}
+
+.document {
+    background-image: linear-gradient(#745ee9 50%, #7f66fe);
+}
+
+.camera {
+    background-image: linear-gradient(#e72b6c 50%, #fe2e74);
+}
+
+.gallery {
+    background-image: linear-gradient(#b659e5 50%, #c861f9);
+}
+
+.audio {
+    background-image: linear-gradient(#e45d31 50%, #f96533);
+}
+
+.location {
+    background-image: linear-gradient(#1d9a50 50%, #1fa755);
+}
+
+.contact {
+    background-image: linear-gradient(#0190cf 50%, #009de1);
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 13px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0;
+    bottom: -3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #005c4b;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #005c4b;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
