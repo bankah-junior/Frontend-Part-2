@@ -4,167 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <title>OLAB-Toes</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <img src="images/logo.png" alt="Netflix Logo" class="logo">
-            <div>
-                <button class="language-btn">English <img src="images/down-icon.png" alt="down-icon"></button>
-                <button>Sign In</button>
-            </div>
+
+    <main>
+        <nav class="fixed w-full text-base flex justify-between md:items-center p-4">
+            <h1 class="brand font-bold text-2xl md:ml-8">
+                <a href="#">OLAB-Toes</a>
+            </h1>
+            <span class="open-menu md:hidden text-3xl cursor-pointer" id="openMenu">&#9776;</span>
+            <ul class="menu md:flex flex-col md:flex-row rounded-lg hidden" id="menu">
+                <span class="close-menu text-3xl w-full flex justify-end pr-4 md:hidden cursor-pointer" id="closeMenu">&times;</span>
+                <li class="md:mx-12 pb-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">MEN</a>
+                </li>
+                <li class="md:mr-12 py-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">WOMEN</a>
+                </li>
+                <li class="md:mr-12 py-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">CHILDREN</a>
+                </li>
+                <li class="md:mr-12 py-4 md:py-0">
+                    <a href="#" class="px-12 md:px-0">SALE</a>
+                </li>
+            </ul>
+            <select class="md:mr-8 h-full cursor-pointer" name="language" id="lan">
+                <option value="English">English</option>
+                <option value="Chinese">Chinese</option>
+                <option value="French">French</option>
+                <option value="Spanish">Spanish</option>
+            </select>
         </nav>
-        <div class="header-content">
-            <h1>Unlimited movies, TV shows and more.</h1>
-            <h3>Watch anywhere. Cancel anytime.</h3>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form class="email-signup">
-                <input type="email" placeholder="Email address" required>
-                <button type="submit">Get Started</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="features">
-        <div class="row">
-            <div class="text-col">
-                <h2>Enjoy on your TV.</h2>
-                <p>Watch on smartTVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        <!-- Content -->
+        <div class="content flex flex-col md:flex-row md:h-screen">
+            <div class="sc-1 md:w-100-30 md:h-full h-100-30 w-full flex justify-center items-center pt-12 md:pt-0 pb-4" id="sc1">
+                <span class="sn1 absolute font-bold text-white md:text-12xl" id="sn1">JORDAN</span>
+                <img src="./img/s1.gif" alt="sneaker" class="s-1 index  md:w-full cursor-pointer md:opacity-100" id="s1">
             </div>
-            <div class="img-col">
-                <img src="images/feature-1.png" alt="feature-1">
+            <div class="sc-2 md:w-100-85 md:h-full h-100-85 w-full flex justify-center items-center" id="sc2">
+                <span class="sn2 absolute font-bold text-white md:text-5xl" id="sn2">REEBOK</span>
+                <img src="./img/s2.gif" alt="sneaker" class="s-2 index md:w-full cursor-pointer md:opacity-100" id="s2">
+            </div>
+            <div class="sc-3 md:w-100-85 md:h-full h-100-85 w-full flex justify-center items-center py-4" id="sc3">
+                <span class="sn3 absolute font-bold text-black md:text-5xl" id="sn3">AIR270</span>
+                <img src="./img/s3.gif" alt="sneaker" class="s-3 index md:w-full cursor-pointer md:opacity-100" id="s3">
             </div>
         </div>
-        <div class="row">
-            <div class="img-col">
-                <img src="images/feature-2.png" alt="feature-2">
-            </div>
-            <div class="text-col">
-                <h2>Download your shows and watch offline.</h2>
-                <p>save your favourite easily and always have something to watch.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="text-col">
-                <h2>Watch everywhere.</h2>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
-            </div>
-            <div class="img-col">
-                <img src="images/feature-3.png" alt="feature-3">
-            </div>
-        </div>
-        <div class="row">
-            <div class="img-col">
-                <img src="images/feature-4.png" alt="feature-4">
-            </div>
-            <div class="text-col">
-                <h2>Create profiles for children.</h2>
-                <p>Send children on adventures with their favourite charaters in a space made just for them--free with your membership.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <ul class="accordion">
-            <li>
-                <input type="radio" name="accordion" id="first">
-                <label for="first">What is Netflix?</label>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores facilis, repellendus enim mollitia eum dicta reiciendis soluta, quod autem aperiam illo sit pariatur perspiciatis temporibus quidem modi sint molestiae.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="second">
-                <label for="second">How much does Netflix cost?</label>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores facilis, repellendus enim mollitia eum dicta reiciendis soluta, quod autem aperiam illo sit pariatur perspiciatis temporibus quidem modi sint molestiae.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="third">
-                <label for="third">Where can I watch?</label>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores facilis, repellendus enim mollitia eum dicta reiciendis soluta, quod autem aperiam illo sit pariatur perspiciatis temporibus quidem modi sint molestiae.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="fourth">
-                <label for="fourth">How do I cancel?</label>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores facilis, repellendus enim mollitia eum dicta reiciendis soluta, quod autem aperiam illo sit pariatur perspiciatis temporibus quidem modi sint molestiae.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="fifth">
-                <label for="fifth">What can I watch on Netflix?</label>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores facilis, repellendus enim mollitia eum dicta reiciendis soluta, quod autem aperiam illo sit pariatur perspiciatis temporibus quidem modi sint molestiae.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="accordion" id="sixth">
-                <label for="sixth">Is Netflix good for kids?</label>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolores facilis, repellendus enim mollitia eum dicta reiciendis soluta, quod autem aperiam illo sit pariatur perspiciatis temporibus quidem modi sint molestiae.
-                    </p>
-                </div>
-            </li>
-        </ul>
-        <small>Ready to watch? Enter your email to create or restart your membership.</small>
-        <form class="email-signup">
-            <input type="email" placeholder="Email address" required>
-            <button type="submit">Get Started</button>
-        </form>
-        <!-- <span class="input-msg">Email is required!</span> -->
-    </div>
-
-    <div class="footer">
-        <h2>Questions? call <a href="tel:+233262991910" style="color: inherit; text-decoration: none;">233 262 991 910</a> </h2>
-
-        <div class="row">
-            <div class="col">
-                <a href="#">FAQ</a>
-                <a href="#">Investor Relations</a>
-                <a href="#">Privacy</a>
-                <a href="#">Speed Test</a>
-            </div>
-            <div class="col">
-                <a href="#">Help Center</a>
-                <a href="#">Jobs</a>
-                <a href="#">Cookies Preferences</a>
-                <a href="#">Legal Notices</a>
-            </div>
-            <div class="col">
-                <a href="#">Account</a>
-                <a href="#">Ways to watch</a>
-                <a href="#">corporate Information</a>
-                <a href="#">Only on Netflix</a>
-            </div>
-            <div class="col">
-                <a href="#">Media Centre</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Contact Us</a>
-            </div>
-        </div>
-
-        <button class="language-btn">English <img src="images/down-icon.png" alt="down-icon"></button>
-
-        <p class="copyright-txt">Neflix Ghana</p>
-    </div>
+        <!-- End of Content -->
+    </main>
     
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

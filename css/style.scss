@@ -1,0 +1,90 @@
+// Customized Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+// End of Customized Scrollbar
+
+main {
+
+    nav {
+        z-index: 99;
+        
+        select {
+            background-color: transparent;
+        }
+
+        select:focus,
+        select:active,
+        option:focus,
+        option:active {
+            border: none;
+            outline: none;
+        }
+
+        .menu,
+        .open-menu,
+        .close-menu {
+            transition: all 2s ease-out;
+        }
+    }
+
+    .bg-mobile {
+        background-color: rgba(241, 221, 221, .7);
+        padding: .5rem;
+        font-weight: bold;
+        transition: all 500ms ease-out;
+    }
+
+    .content {
+
+        .stand {
+            transform: rotate(-25deg);
+            transition: all 3s ease-out;
+        }
+
+        .index {
+            z-index: 1;
+        }
+
+        .sc-1 {
+            background-color: #c71f32; 
+            transition: all 500ms;
+
+            .sn-1 {
+                transition: all 3s ease-out;
+            }
+
+            .s-1 {
+                transition: all 3s ease-in;
+            }
+        }
+
+        .sc-2 {
+            background-color: #a76b46; 
+            transition: all 500ms;
+
+            .sn-2 {
+                transition: all 3s ease-out;
+            }
+
+            .s-2 {
+                transition: all 3s ease-in;
+            }
+        }
+
+        .sc-3 {
+            background-color: #fff; 
+            transition: all 500ms;
+
+            .sn-3 {
+                transition: all 3s ease-out;
+            }
+
+            .s-3 {
+                transition: all 3s ease-in;
+            }
+        }
+    }
+}

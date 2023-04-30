@@ -1,0 +1,69 @@
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+main nav {
+  z-index: 99;
+}
+main nav select {
+  background-color: transparent;
+}
+main nav select:focus,
+main nav select:active,
+main nav option:focus,
+main nav option:active {
+  border: none;
+  outline: none;
+}
+main nav .menu,
+main nav .open-menu,
+main nav .close-menu {
+  transition: all 2s ease-out;
+}
+main .bg-mobile {
+  background-color: rgba(241, 221, 221, 0.7);
+  padding: 0.5rem;
+  font-weight: bold;
+  transition: all 500ms ease-out;
+}
+main .content .stand {
+  transform: rotate(-25deg);
+  transition: all 3s ease-out;
+}
+main .content .index {
+  z-index: 1;
+}
+main .content .sc-1 {
+  background-color: #c71f32;
+  transition: all 500ms;
+}
+main .content .sc-1 .sn-1 {
+  transition: all 3s ease-out;
+}
+main .content .sc-1 .s-1 {
+  transition: all 3s ease-in;
+}
+main .content .sc-2 {
+  background-color: #a76b46;
+  transition: all 500ms;
+}
+main .content .sc-2 .sn-2 {
+  transition: all 3s ease-out;
+}
+main .content .sc-2 .s-2 {
+  transition: all 3s ease-in;
+}
+main .content .sc-3 {
+  background-color: #fff;
+  transition: all 500ms;
+}
+main .content .sc-3 .sn-3 {
+  transition: all 3s ease-out;
+}
+main .content .sc-3 .s-3 {
+  transition: all 3s ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */
