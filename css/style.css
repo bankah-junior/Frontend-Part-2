@@ -1,69 +1,102 @@
-/* width */
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+* {
+    overflow-x: hidden;
 }
 
-main nav {
-  z-index: 99;
-}
-main nav select {
-  background-color: transparent;
-}
-main nav select:focus,
-main nav select:active,
-main nav option:focus,
-main nav option:active {
-  border: none;
-  outline: none;
-}
-main nav .menu,
-main nav .open-menu,
-main nav .close-menu {
-  transition: all 2s ease-out;
-}
-main .bg-mobile {
-  background-color: rgba(241, 221, 221, 0.7);
-  padding: 0.5rem;
-  font-weight: bold;
-  transition: all 500ms ease-out;
-}
-main .content .stand {
-  transform: rotate(-25deg);
-  transition: all 3s ease-out;
-}
-main .content .index {
-  z-index: 1;
-}
-main .content .sc-1 {
-  background-color: #c71f32;
-  transition: all 500ms;
-}
-main .content .sc-1 .sn-1 {
-  transition: all 3s ease-out;
-}
-main .content .sc-1 .s-1 {
-  transition: all 3s ease-in;
-}
-main .content .sc-2 {
-  background-color: #a76b46;
-  transition: all 500ms;
-}
-main .content .sc-2 .sn-2 {
-  transition: all 3s ease-out;
-}
-main .content .sc-2 .s-2 {
-  transition: all 3s ease-in;
-}
-main .content .sc-3 {
-  background-color: #fff;
-  transition: all 500ms;
-}
-main .content .sc-3 .sn-3 {
-  transition: all 3s ease-out;
-}
-main .content .sc-3 .s-3 {
-  transition: all 3s ease-in;
+body {
+    background: url('../img/background-img.jpg'), rgba(0, 0, 0, 1.0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
 }
 
-/*# sourceMappingURL=style.css.map */
+.flash-container {
+    z-index: 99;
+    left: 100%;
+    animation: flashLeftToRight 6s linear alternate;
+}
+
+@keyframes flashLeftToRight {
+    from {
+        left: 0;
+        right: 100%;
+    }
+
+    to {
+        left: 100%;
+        right: 0;
+    }
+}
+
+input:active,
+input:focus,
+input {
+    outline: 0;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    animation-name: slideInUp1;
+    animation-duration: 4s;
+}
+
+.text2 {
+    animation-name: slideInUp2;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.text3 {
+    animation-name: slideInUp3;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.text4 {
+    animation-name: slideInUp4;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+
+@keyframes slideInUp1 {
+    from {
+        transform: translateX(60rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp2 {
+    from {
+        transform: translateX(65rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp3 {
+    from {
+        transform: translateX(70rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp4 {
+    from {
+        transform: translateX(75rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+  

@@ -4,59 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLAB-Toes</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>CodeInn | Login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icons/codepen.png" type="image/x-icon">
 </head>
 <body>
-
-    <main>
-        <nav class="fixed w-full text-base flex justify-between md:items-center p-4">
-            <h1 class="brand font-bold text-2xl md:ml-8">
-                <a href="#">OLAB-Toes</a>
-            </h1>
-            <span class="open-menu md:hidden text-3xl cursor-pointer" id="openMenu">&#9776;</span>
-            <ul class="menu md:flex flex-col md:flex-row rounded-lg hidden" id="menu">
-                <span class="close-menu text-3xl w-full flex justify-end pr-4 md:hidden cursor-pointer" id="closeMenu">&times;</span>
-                <li class="md:mx-12 pb-4 md:py-0">
-                    <a href="#" class="px-12 md:px-0">MEN</a>
-                </li>
-                <li class="md:mr-12 py-4 md:py-0">
-                    <a href="#" class="px-12 md:px-0">WOMEN</a>
-                </li>
-                <li class="md:mr-12 py-4 md:py-0">
-                    <a href="#" class="px-12 md:px-0">CHILDREN</a>
-                </li>
-                <li class="md:mr-12 py-4 md:py-0">
-                    <a href="#" class="px-12 md:px-0">SALE</a>
-                </li>
-            </ul>
-            <select class="md:mr-8 h-full cursor-pointer" name="language" id="lan">
-                <option value="English">English</option>
-                <option value="Chinese">Chinese</option>
-                <option value="French">French</option>
-                <option value="Spanish">Spanish</option>
-            </select>
-        </nav>
-        <!-- Content -->
-        <div class="content flex flex-col md:flex-row md:h-screen">
-            <div class="sc-1 md:w-100-30 md:h-full h-100-30 w-full flex justify-center items-center pt-12 md:pt-0 pb-4" id="sc1">
-                <span class="sn1 absolute font-bold text-white md:text-12xl" id="sn1">JORDAN</span>
-                <img src="./img/s1.gif" alt="sneaker" class="s-1 index  md:w-full cursor-pointer md:opacity-100" id="s1">
-            </div>
-            <div class="sc-2 md:w-100-85 md:h-full h-100-85 w-full flex justify-center items-center" id="sc2">
-                <span class="sn2 absolute font-bold text-white md:text-5xl" id="sn2">REEBOK</span>
-                <img src="./img/s2.gif" alt="sneaker" class="s-2 index md:w-full cursor-pointer md:opacity-100" id="s2">
-            </div>
-            <div class="sc-3 md:w-100-85 md:h-full h-100-85 w-full flex justify-center items-center py-4" id="sc3">
-                <span class="sn3 absolute font-bold text-black md:text-5xl" id="sn3">AIR270</span>
-                <img src="./img/s3.gif" alt="sneaker" class="s-3 index md:w-full cursor-pointer md:opacity-100" id="s3">
+    <div class="flash-container absolute w-screen h-full bg-black"></div>
+    <main class="w-full md:h-screen flex flex-col-reverse md:flex-row justify-center items-center text-white p-4 sans-serif">
+        <div class="left-container h-full w-full md:w-100-55 flex justify-center">
+            <div class="rounded-lg h-full flex flex-col items-center justify-center bg-white text-black py-8 my-8 md:my-0" style="width: 30rem;">
+                <h3 class="text-3xl font-semibold">Sign in</h3>
+                <span class="mb-16 text-sm mt-2">Welcome to CodeInn</span>
+                <div class="form-container">
+                    <form class="flex flex-col">
+                        <label for="email" class="text-sm">Email:</label>
+                        <input type="email" name="email" id="email" class="mb-8 border-b-2 mt-2 border-gray-500" required>
+                        <label for="password" class="text-sm">Password:</label>
+                        <input type="password" name="password" id="password" class="mb-8 border-b-2 mt-2 border-gray-500" required>
+                        <span class="mb-12">
+                            <input type="checkbox" name="rememberMe" id="rememberMe">
+                            <label for="rememberMe" class="mr-8">Remember me</label>
+                            <a href="#" class="text-blue-600">Forgot Password?</a>
+                        </span>
+                        <input type="submit" value="Sign In" class="text-white bg-black mb-4 py-2 rounded cursor-pointer">
+                        <span>
+                            Don't have an account? 
+                            <a href="#" class="text-blue-600">Sign up</a>
+                        </span>
+                    </form>
+                </div>
             </div>
         </div>
-        <!-- End of Content -->
-    </main>
-    
+        <div class="right-container h-full w-full md:w-100-45 flex flex-col">
+            <nav class="flex justify-between items-center mb-4">
+                <h2 class="text-2xl font-bold uppercase"><a href="#">codeinn</a></h2>
+                <ul class="flex">
+                    <a href="#"><li class="px-4">About us</li></a>
+                    <a href="#"><li class="px-4">Contact</li></a>
+                    <a href="#"><li class="px-4">Login</li></a>
+                </ul>
+            </nav>
+            <div class="right-content">
+                <h3 class="text1 text-6xl font-bold">Consistency</h3>
+                <h3 class="text2 text-6xl font-bold opacity-50">Determine</h3>
+                <h3 class="text3 text-6xl font-bold opacity-50">Hardwork</h3>
+                <h3 class="text4 text-6xl font-bold opacity-50">Curious</h3>
 
-    <script src="./js/index.js"></script>
+                <div class="flex justify-start items-center mt-16">
+                    <img src="icons/pagination.png" alt="icon" class="w-8 h-8" style="filter: invert(100%);">
+                    <span class="ml-4" style="width: 80%;">
+                        Welcome to Codeinn. Your number one place to be. Sign in to continue your journey.
+                        Don't have an account? Register and enjoy all the goodies!
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
